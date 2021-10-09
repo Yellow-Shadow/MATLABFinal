@@ -1,0 +1,2101 @@
+{
+ "cwbdata": {
+  "@xsi:schemaLocation": "urn:cwb.gov.tw:cwbdata-0.1 https://opendata.cwb.gov.tw/XSD/CWB-data.xsd",
+  "@xmlns": "urn:cwb.gov.tw:cwbdata-0.1",
+  "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+  "identifier": "6eac1726-faf4-4e3c-84d3-ebfd2c35a59f",
+  "datasetID": "S0001",
+  "datasetName": "過去氣象觀測",
+  "dataItemID": "S0001-01000",
+  "sender": "weather@cwb.gov.tw",
+  "sent": "2020-05-22T13:35:04+08:00",
+  "status": "Actual",
+  "scope": "Public",
+  "msgType": "Issue",
+  "publisherOID": "2.16.886.101.20003.20008.20004",
+  "resources": {
+   "resource": {
+    "metadata": {
+     "resourceID": "S0001-01000-003",
+     "resourceName": "中央氣象局氣候觀測_逐月_多要素氣象資料",
+     "resourceDescription": "氣象局所屬氣象觀測站，逐月的各項氣象因子資料。",
+     "language": "zh",
+     "homepage": "http://e-service.cwb.gov.tw/wdps/obs/state.htm",
+     "sources": {
+      "source": [
+       {
+        "title": "中央氣象局氣象測站代號及站況資料",
+        "path": "http://e-service.cwb.gov.tw/wdps/obs/state.htm"
+       },
+       {
+        "title": "Abbreviation for unit of measure - as defined within WMO No. 306 Common code-table C-6 1List of units for TDCFs1. (use wmo abbreviation)",
+        "path": "http://codes.wmo.int/common/unit"
+       }
+      ]
+     },
+     "temporal": {
+      "startTime": "2020-04-01T00:00:00+08:00",
+      "endTime": "2020-04-30T00:00:00+08:00"
+     },
+     "spatial": {
+      "description": "中央氣象局所屬氣象觀測站"
+     },
+     "statistics": {
+      "statisticalPeriods": {
+       "statisticalPeriod": {
+        "periodTagName": "monthly",
+        "description": "逐月"
+       }
+      },
+      "weatherElements": {
+       "weatherElement": [
+        {
+         "tagName": "temperature",
+         "description": "溫度",
+         "units": "˚C",
+         "statisticalMethods": {
+          "statisticalMethod": [
+           {
+            "methodTagName": "mean",
+            "description": "平均溫度"
+           },
+           {
+            "methodTagName": "maximum",
+            "description": "最高溫度"
+           },
+           {
+            "methodTagName": "maximumDate",
+            "description": "最高溫度發生日期"
+           },
+           {
+            "methodTagName": "minimum",
+            "description": "最低溫度"
+           },
+           {
+            "methodTagName": "minimumDate",
+            "description": "最低溫度發生日期"
+           }
+          ]
+         }
+        },
+        {
+         "tagName": "precipitation",
+         "description": "降水量",
+         "units": "mm",
+         "statisticalMethods": {
+          "statisticalMethod": [
+           {
+            "methodTagName": "accumulation",
+            "description": "累積降水量"
+           },
+           {
+            "methodTagName": "GE01Days",
+            "description": "降雨日數, 降雨量&gt;=0.1mm日數,Number of Days with Precipitation &gt;=0.1mm"
+           }
+          ]
+         }
+        },
+        {
+         "tagName": "windSpeed",
+         "description": "10分鐘風風速",
+         "units": "m s^-1",
+         "statisticalMethods": {
+          "statisticalMethod": [
+           {
+            "methodTagName": "maximum",
+            "description": "最大10分鐘風風速"
+           },
+           {
+            "methodTagName": "maximumDate",
+            "description": "最大10分鐘風發生日期"
+           }
+          ]
+         }
+        },
+        {
+         "tagName": "windDirection",
+         "description": "10分鐘風風向",
+         "units": "˚",
+         "statisticalMethods": {
+          "statisticalMethod": {
+           "methodTagName": "maximum",
+           "description": "最大10分鐘風風向"
+          }
+         }
+        },
+        {
+         "tagName": "gustSpeed",
+         "description": "瞬間風風速",
+         "units": "m s^-1",
+         "statisticalMethods": {
+          "statisticalMethod": [
+           {
+            "methodTagName": "maximum",
+            "description": "最大瞬間風風速"
+           },
+           {
+            "methodTagName": "maximumDate",
+            "description": "最大瞬間風發生日期"
+           }
+          ]
+         }
+        },
+        {
+         "tagName": "gustDirection",
+         "description": "瞬間風風向",
+         "units": "˚",
+         "statisticalMethods": {
+          "statisticalMethod": {
+           "methodTagName": "maximum",
+           "description": "最大瞬間風風向"
+          }
+         }
+        },
+        {
+         "tagName": "relativeHumidity",
+         "description": "相對溼度",
+         "units": "%",
+         "statisticalMethods": {
+          "statisticalMethod": [
+           {
+            "methodTagName": "mean",
+            "description": "平均相對濕度"
+           },
+           {
+            "methodTagName": "minimum",
+            "description": "最小相對濕度"
+           },
+           {
+            "methodTagName": "minimumDate",
+            "description": "最小相對濕度發生日期"
+           }
+          ]
+         }
+        },
+        {
+         "tagName": "stationPressure",
+         "description": "測站氣壓",
+         "units": "hPa",
+         "statisticalMethods": {
+          "statisticalMethod": {
+           "methodTagName": "mean",
+           "description": "平均測站氣壓"
+          }
+         }
+        },
+        {
+         "tagName": "sunshineDuration",
+         "description": "日照時數",
+         "units": "hr",
+         "statisticalMethods": {
+          "statisticalMethod": {
+           "methodTagName": "total",
+           "description": "總日照時數"
+          }
+         }
+        }
+       ]
+      },
+      "specialValues": {
+       "specialValue": {
+        "value": null,
+        "description": "無觀測"
+       }
+      }
+     }
+    },
+    "data": {
+     "surfaceObs": {
+      "location": [
+       {
+        "station": {
+         "stationID": "466880",
+         "stationName": "板橋",
+         "stationNameEN": "BANQIAO",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "20.4",
+           "maximum": "32.1",
+           "maximumDate": "2020-04-30",
+           "minimum": "9.9",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "97.1",
+           "GE01Days": "15"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "7.3",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "50.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "14.1",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "30.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "76",
+           "minimum": "24",
+           "minimumDate": "2020-04-16"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1015.4"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "102.2"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "466900",
+         "stationName": "淡水",
+         "stationNameEN": "TAMSUI",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "20.1",
+           "maximum": "30.5",
+           "maximumDate": "2020-04-29",
+           "minimum": "9.7",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "70.0",
+           "GE01Days": "13"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "5.6",
+           "maximumDate": "2020-04-21"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "20.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "12.1",
+           "maximumDate": "2020-04-28"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "150.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "79",
+           "minimum": "36",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1015.2"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "113.6"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "466910",
+         "stationName": "鞍部",
+         "stationNameEN": "ANBU",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "14.5",
+           "maximum": "24.9",
+           "maximumDate": "2020-04-19",
+           "minimum": "6.1",
+           "minimumDate": "2020-04-12"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "134.8",
+           "GE01Days": "19"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "10.1",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "360.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "20.3",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "160.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "88",
+           "minimum": "36",
+           "minimumDate": "2020-04-15"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "923.4"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "82.5"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "466920",
+         "stationName": "臺北",
+         "stationNameEN": "TAIPEI",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "20.9",
+           "maximum": "33.6",
+           "maximumDate": "2020-04-30",
+           "minimum": "10.3",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "87.9",
+           "GE01Days": "15"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "8.1",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "100.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "15.9",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "70.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "73",
+           "minimum": "22",
+           "minimumDate": "2020-04-16"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1013.5"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "93.6"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "466930",
+         "stationName": "竹子湖",
+         "stationNameEN": "ZHUZIHU",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "16.1",
+           "maximum": "26.6",
+           "maximumDate": "2020-04-30",
+           "minimum": "7.3",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "99.7",
+           "GE01Days": "16"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "8.9",
+           "maximumDate": "2020-04-23"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "20.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "19.2",
+           "maximumDate": "2020-04-23"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "30.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "85",
+           "minimum": "34",
+           "minimumDate": "2020-04-30"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "947.7"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "100.7"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "466940",
+         "stationName": "基隆",
+         "stationNameEN": "KEELUNG",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "19.8",
+           "maximum": "30.5",
+           "maximumDate": "2020-04-30",
+           "minimum": "11.1",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "223.8",
+           "GE01Days": "20"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "8.1",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "30.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "14.1",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "40.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "80",
+           "minimum": "30",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1013.8"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "101.3"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "466950",
+         "stationName": "彭佳嶼",
+         "stationNameEN": "PENGJIAYU",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "19.9",
+           "maximum": "28.3",
+           "maximumDate": "2020-04-19",
+           "minimum": "14.6",
+           "minimumDate": "2020-04-23"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "46.5",
+           "GE01Days": "16"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "15.7",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "360.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "22.6",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "20.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "73",
+           "minimum": "32",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1005.7"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "112.3"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "466990",
+         "stationName": "花蓮",
+         "stationNameEN": "HUALIEN",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "21.5",
+           "maximum": "30.1",
+           "maximumDate": "2020-04-18",
+           "minimum": "15.0",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "57.0",
+           "GE01Days": "14"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "9.2",
+           "maximumDate": "2020-04-19"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "180.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "15.3",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "30.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "79",
+           "minimum": "44",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1014.4"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "66.9"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467050",
+         "stationName": "新屋",
+         "stationNameEN": "XINWU",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "20.0",
+           "maximum": "27.7",
+           "maximumDate": "2020-04-29",
+           "minimum": "9.4",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "71.3",
+           "GE01Days": "14"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "12.7",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "50.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "21.7",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "50.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "81",
+           "minimum": "30",
+           "minimumDate": "2020-04-14"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1014.8"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "119.8"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467060",
+         "stationName": "蘇澳",
+         "stationNameEN": "SU-AO",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "20.3",
+           "maximum": "30.7",
+           "maximumDate": "2020-04-19",
+           "minimum": "11.9",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "327.0",
+           "GE01Days": "16"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "8.7",
+           "maximumDate": "2020-04-01"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "70.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "19.5",
+           "maximumDate": "2020-04-01"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "100.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "82",
+           "minimum": "21",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1014.0"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "77.0"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467080",
+         "stationName": "宜蘭",
+         "stationNameEN": "YILAN",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "20.4",
+           "maximum": "30.9",
+           "maximumDate": "2020-04-19",
+           "minimum": "10.8",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "124.2",
+           "GE01Days": "14"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "9.1",
+           "maximumDate": "2020-04-13"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "90.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "14.6",
+           "maximumDate": "2020-04-13"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "360.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "78",
+           "minimum": "32",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1016.3"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "81.4"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467110",
+         "stationName": "金門",
+         "stationNameEN": "KINMEN",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "19.2",
+           "maximum": "32.1",
+           "maximumDate": "2020-04-27",
+           "minimum": "12.3",
+           "minimumDate": "2020-04-08"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "41.6",
+           "GE01Days": "8"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "9.3",
+           "maximumDate": "2020-04-28"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "70.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "17.0",
+           "maximumDate": "2020-04-28"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "70.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "70",
+           "minimum": "23",
+           "minimumDate": "2020-04-27"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1014.4"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "151.8"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467300",
+         "stationName": "東吉島",
+         "stationNameEN": "DONGJIDAO",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "22.9",
+           "maximum": "30.0",
+           "maximumDate": "2020-04-18",
+           "minimum": "19.0",
+           "minimumDate": "2020-04-12"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "39.8",
+           "GE01Days": "6"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "15.7",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "20.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "22.8",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "40.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "77",
+           "minimum": "47",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1011.0"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "172.5"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467350",
+         "stationName": "澎湖",
+         "stationNameEN": "PENGHU",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "21.7",
+           "maximum": "30.1",
+           "maximumDate": "2020-04-18",
+           "minimum": "16.5",
+           "minimumDate": "2020-04-07"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "45.1",
+           "GE01Days": "8"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "8.0",
+           "maximumDate": "2020-04-04"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "20.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "17.2",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "20.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "80",
+           "minimum": "19",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1014.8"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "136.9"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467410",
+         "stationName": "臺南",
+         "stationNameEN": "TAINAN",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "23.4",
+           "maximum": "32.0",
+           "maximumDate": "2020-04-18",
+           "minimum": "15.6",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "23.0",
+           "GE01Days": "3"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "9.5",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "360.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "17.4",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "360.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "69",
+           "minimum": "32",
+           "minimumDate": "2020-04-16"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1012.8"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "203.8"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467440",
+         "stationName": "高雄",
+         "stationNameEN": "KAOHSIUNG",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "25.0",
+           "maximum": "31.0",
+           "maximumDate": "2020-04-19",
+           "minimum": "17.1",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "34.5",
+           "GE01Days": "2"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "8.3",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "350.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "13.3",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "360.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "69",
+           "minimum": "36",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1014.9"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "218.3"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467480",
+         "stationName": "嘉義",
+         "stationNameEN": "CHIAYI",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "22.4",
+           "maximum": "33.8",
+           "maximumDate": "2020-04-19",
+           "minimum": "11.6",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "37.0",
+           "GE01Days": "6"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "7.4",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "10.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "12.6",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "360.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "75",
+           "minimum": "29",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1012.1"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "175.1"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467490",
+         "stationName": "臺中",
+         "stationNameEN": "TAICHUNG",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "22.2",
+           "maximum": "32.8",
+           "maximumDate": "2020-04-19",
+           "minimum": "12.8",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "59.5",
+           "GE01Days": "9"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "5.7",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "360.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "13.2",
+           "maximumDate": "2020-04-13"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "340.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "70",
+           "minimum": "20",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1005.7"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "154.5"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467530",
+         "stationName": "阿里山",
+         "stationNameEN": "ALISHAN",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "9.9",
+           "maximum": "19.4",
+           "maximumDate": "2020-04-17",
+           "minimum": "-0.8",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "101.3",
+           "GE01Days": "11"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "4.7",
+           "maximumDate": "2020-04-02"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "80.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "9.9",
+           "maximumDate": "2020-04-02"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "60.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "79",
+           "minimum": "21",
+           "minimumDate": "2020-04-14"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "765.7"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "123.6"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467540",
+         "stationName": "大武",
+         "stationNameEN": "DAWU",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "23.6",
+           "maximum": "34.2",
+           "maximumDate": "2020-04-19",
+           "minimum": "17.0",
+           "minimumDate": "2020-04-15"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "46.5",
+           "GE01Days": "10"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "6.4",
+           "maximumDate": "2020-04-28"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "30.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "13.6",
+           "maximumDate": "2020-04-24"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "50.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "71",
+           "minimum": "38",
+           "minimumDate": "2020-04-19"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1014.7"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "117.7"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467550",
+         "stationName": "玉山",
+         "stationNameEN": "YUSHAN",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "3.0",
+           "maximum": "20.1",
+           "maximumDate": "2020-04-17",
+           "minimum": "-6.8",
+           "minimumDate": "2020-04-12"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "85.4",
+           "GE01Days": "11"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "11.7",
+           "maximumDate": "2020-04-23"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "280.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "22.0",
+           "maximumDate": "2020-04-26"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "280.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "83",
+           "minimum": "10",
+           "minimumDate": "2020-04-10"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "643.1"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "136.1"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467571",
+         "stationName": "新竹",
+         "stationNameEN": "HSINCHU",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "20.5",
+           "maximum": "29.6",
+           "maximumDate": "2020-04-29",
+           "minimum": "9.5",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "72.5",
+           "GE01Days": "10"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "5.7",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "20.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "13.4",
+           "maximumDate": "2020-04-28"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "10.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "74",
+           "minimum": "28",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1013.2"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "116.7"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467590",
+         "stationName": "恆春",
+         "stationNameEN": "HENGCHUN",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "24.7",
+           "maximum": "32.4",
+           "maximumDate": "2020-04-19",
+           "minimum": "17.2",
+           "minimumDate": "2020-04-15"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "6.0",
+           "GE01Days": "2"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "10.4",
+           "maximumDate": "2020-04-28"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "60.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "21.5",
+           "maximumDate": "2020-04-24"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "50.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "73",
+           "minimum": "31",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1012.4"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "205.5"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467610",
+         "stationName": "成功",
+         "stationNameEN": "CHENGGONG",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "22.0",
+           "maximum": "29.5",
+           "maximumDate": "2020-04-18",
+           "minimum": "15.6",
+           "minimumDate": "2020-04-12"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "58.6",
+           "GE01Days": "14"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "8.2",
+           "maximumDate": "2020-04-23"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "30.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "14.1",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "40.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "78",
+           "minimum": "38",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1011.7"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "59.1"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467620",
+         "stationName": "蘭嶼",
+         "stationNameEN": "LANYU",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "21.6",
+           "maximum": "28.5",
+           "maximumDate": "2020-04-18",
+           "minimum": "15.9",
+           "minimumDate": "2020-04-12"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "99.2",
+           "GE01Days": "15"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "16.5",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "20.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "28.4",
+           "maximumDate": "2020-04-24"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "20.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "87",
+           "minimum": "33",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "978.7"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "116.2"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467650",
+         "stationName": "日月潭",
+         "stationNameEN": "SUN MOON LAKE",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "18.0",
+           "maximum": "29.1",
+           "maximumDate": "2020-04-20",
+           "minimum": "7.4",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "72.0",
+           "GE01Days": "9"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "6.7",
+           "maximumDate": "2020-04-02"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "340.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "13.3",
+           "maximumDate": "2020-04-02"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "350.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "75",
+           "minimum": "31",
+           "minimumDate": "2020-04-16"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "903.7"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "118.1"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467660",
+         "stationName": "臺東",
+         "stationNameEN": "TAITUNG",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "22.9",
+           "maximum": "31.2",
+           "maximumDate": "2020-04-19",
+           "minimum": "16.3",
+           "minimumDate": "2020-04-12"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "48.2",
+           "GE01Days": "6"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "7.8",
+           "maximumDate": "2020-04-19"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "200.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "14.8",
+           "maximumDate": "2020-04-19"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "180.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "74",
+           "minimum": "36",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1015.0"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "80.2"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467770",
+         "stationName": "梧棲",
+         "stationNameEN": "WUQI",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "21.1",
+           "maximum": "28.9",
+           "maximumDate": "2020-04-19",
+           "minimum": "14.7",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "36.5",
+           "GE01Days": "10"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "12.8",
+           "maximumDate": "2020-04-12"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "350.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "20.9",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "20.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "74",
+           "minimum": "40",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1013.1"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "166.0"
+          }
+         }
+        }
+       },
+       {
+        "station": {
+         "stationID": "467990",
+         "stationName": "馬祖",
+         "stationNameEN": "MATSU",
+         "stationAttribute": "局屬有人氣象站"
+        },
+        "stationObsStatistics": {
+         "dataYearMonth": "2020-04",
+         "temperature": {
+          "monthly": {
+           "mean": "16.3",
+           "maximum": "26.9",
+           "maximumDate": "2020-04-30",
+           "minimum": "9.1",
+           "minimumDate": "2020-04-06"
+          }
+         },
+         "precipitation": {
+          "monthly": {
+           "accumulation": "41.2",
+           "GE01Days": "8"
+          }
+         },
+         "windSpeed": {
+          "monthly": {
+           "maximum": "9.2",
+           "maximumDate": "2020-04-17"
+          }
+         },
+         "windDirection": {
+          "monthly": {
+           "maximum": "200.0"
+          }
+         },
+         "gustSpeed": {
+          "monthly": {
+           "maximum": "17.2",
+           "maximumDate": "2020-04-22"
+          }
+         },
+         "gustDirection": {
+          "monthly": {
+           "maximum": "20.0"
+          }
+         },
+         "relativeHumidity": {
+          "monthly": {
+           "mean": "79",
+           "minimum": "43",
+           "minimumDate": "2020-04-13"
+          }
+         },
+         "stationPressure": {
+          "monthly": {
+           "mean": "1008.1"
+          }
+         },
+         "sunshineDuration": {
+          "monthly": {
+           "total": "161.6"
+          }
+         }
+        }
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}
